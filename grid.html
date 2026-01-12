@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>grid</title>
+        <style>
+            #grid{
+                background-color:green;
+                display: grid;
+                padding: 20px;
+                grid-column-gap:20px;
+                grid-row-gap: 10px;
+                grid-template-columns: 200px 200px auto;
+            }
+            .griditem{
+                background-color: white;
+                font-size: 20px;
+                padding: 20px;
+                text-align:center;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div id="grid">
+            <div class="griditem">1</div>
+            <div class="griditem">2</div>
+            <div class="griditem">3</div>
+            <div class="griditem">4</div>
+            <div class="griditem">5</div>
+            <div class="griditem">6</div>
+            <div class="griditem">7</div>
+            <div class="griditem">8</div>
+            <div class="griditem">9</div>
+            <div class="griditem">10</div>
+            <div class="griditem">11</div>
+            <div class="griditem">12</div>
+        </div>
+        <h3> here grid-template-columns tells us how many columns would be there and how wide would each of these column be. for this case we can see 1st and 2nd column will be of fixed size that is 200px but then then 3rd column where auto is written it will change according to screen size, that is, size of third would be flexible and according to what screen size is open but 1st and 2nd are fixed no changes would be done in both.</h3>
+    </body>
+</html>

@@ -12,10 +12,21 @@
             button:hover{
                 background-color:orange;
             }
+            @media(min-width:600px){
+                body{
+                    background-color:red;
+                }
+            }
+            @media(max-width:599px){
+                body{
+                    background-color: blue;
+                }
+            }
         </style>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
     </head>
     <body>
         <button>click me!</button>
-        <h4>used to change color when user hover over a button by adding a pseudo-class to css selector</h4>
+        <h4>used to change color when user hover over a button by adding a pseudo-class to css selector and the meta line inside the head section ensures that the content of a web page when viewed through mobile is arranged by mobile screen width instead of shrinking the content when viewed through small screen and also in the style section @media line you can see that min width and max width is written so whenever the web page is 600 or larger the color of the background will be red and whenever the width will 500 or less the color will be blue,so,the color will change between red and blue according to whatever size of webpage you have opened...larger then red and smaller then blue and it is done using media query. </h4>
     </body>
 </html>
